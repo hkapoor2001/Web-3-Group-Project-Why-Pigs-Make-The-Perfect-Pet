@@ -1,3 +1,109 @@
 /* =============
     Header
 ============= */
+
+header{
+    display: grid;
+    grid-template-areas: ". header ." ;
+    grid-template-columns: 5% 90% 5% ;
+    padding-top: 2%;
+
+    >div{
+        grid-area: header;
+        display: grid;
+        grid-template-areas: "logo burger" ;
+        grid-template-columns: 50% 50% ;
+
+        #header-nav-container{
+            display: none;
+        }
+    
+        #logo-container{
+            grid-area: logo;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+
+        #burger-container{
+            grid-area: burger;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+
+    @include lg {
+            grid-template-areas: "logo . nav-container";
+            grid-template-columns: 40% 20% 40% ;
+    
+            #burger-container{
+                display: none;
+            }
+    
+            #logo-container{
+                grid-area: logo;
+            }
+    
+            #header-nav-container{
+                display: flex;
+                grid-area: nav-container;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                a{
+                    font-family: 'Fira Sans', sans-serif;
+                    font-size: 25px;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: black;
+                }
+
+                a:hover {
+                    color: #FFC700;
+                }
+    
+            }
+
+        }
+
+
+
+    @include xl {
+        grid-template-areas: "logo . nav-container";
+        grid-template-columns: 40% 25% 35% ;
+
+        #burger-container{
+            display: none;
+        }
+
+        #logo-container{
+            grid-area: logo;
+        }
+
+        #header-nav-container{
+            display: flex;
+            grid-area: nav-container;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a{
+                font-family: 'Fira Sans', sans-serif;
+                font-size: 30px;
+                font-weight: bold;
+                text-decoration: none;
+                color: black;
+            }
+
+        }
+    }
+
+    }
+
+
+
+
+
+
+}

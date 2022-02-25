@@ -379,6 +379,89 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  display: grid;
+  grid-template-areas: ". header .";
+  grid-template-columns: 5% 90% 5%;
+  padding-top: 2%;
+}
+header > div {
+  grid-area: header;
+  display: grid;
+  grid-template-areas: "logo burger";
+  grid-template-columns: 50% 50%;
+}
+header > div #header-nav-container {
+  display: none;
+}
+header > div #logo-container {
+  grid-area: logo;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+header > div #burger-container {
+  grid-area: burger;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  header > div {
+    grid-template-areas: "logo . nav-container";
+    grid-template-columns: 40% 20% 40%;
+  }
+  header > div #burger-container {
+    display: none;
+  }
+  header > div #logo-container {
+    grid-area: logo;
+  }
+  header > div #header-nav-container {
+    display: flex;
+    grid-area: nav-container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header > div #header-nav-container a {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+  header > div #header-nav-container a:hover {
+    color: #FFC700;
+  }
+}
+@media (min-width: 1200px) {
+  header > div {
+    grid-template-areas: "logo . nav-container";
+    grid-template-columns: 40% 25% 35%;
+  }
+  header > div #burger-container {
+    display: none;
+  }
+  header > div #logo-container {
+    grid-area: logo;
+  }
+  header > div #header-nav-container {
+    display: flex;
+    grid-area: nav-container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header > div #header-nav-container a {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+}
+
 /* =============
     Footer
 ============= */
