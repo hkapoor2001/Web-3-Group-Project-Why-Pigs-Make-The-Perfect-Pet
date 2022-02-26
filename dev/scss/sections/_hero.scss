@@ -1,0 +1,18 @@
+#hero{
+    width: 100vw;
+    padding-top: 15%;
+    background-color: #FFF8F8;
+    // padding added to ensure that image appears below the header, background color added to ensure white space does not make the header appear too large
+
+    @include lg{
+        padding-top: 6%;
+    }
+
+    #hero-div{
+        #heroimg{
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+}
