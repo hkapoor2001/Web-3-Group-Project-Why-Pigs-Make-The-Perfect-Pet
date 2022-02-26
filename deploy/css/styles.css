@@ -388,6 +388,7 @@ header {
   padding-bottom: 1%;
   background-color: white;
   position: fixed;
+  z-index: 10;
 }
 header > div {
   grid-area: header;
@@ -479,7 +480,28 @@ header > div #burger-container {
     padding-top: 6%;
   }
 }
-#hero #hero-div #heroimg {
+#hero #hero-div {
+  position: relative;
+}
+#hero #hero-div #halo-div {
+  z-index: 3;
+  position: absolute;
   width: 100%;
   height: 100%;
+  display: grid;
+  grid-template-columns: 53% 20% 27%;
+  margin-top: 2%;
+  grid-template-areas: ". halo .";
+}
+#hero #hero-div #halo-div #halo {
+  grid-area: halo;
+}
+#hero #hero-div #hero-img-div {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+#hero #hero-div #hero-img-div #heroimg {
+  width: 100%;
 }

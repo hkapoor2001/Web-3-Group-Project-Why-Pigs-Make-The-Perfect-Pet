@@ -11,6 +11,7 @@ header{
     padding-bottom: 1%;
     background-color: white;
     position: fixed;
+    z-index: 10;
 
     >div{
         grid-area: header;
