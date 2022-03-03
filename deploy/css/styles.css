@@ -382,3 +382,228 @@ textarea {
 /* =============
     Footer
 ============= */
+#pig-facts {
+  margin-top: 200px;
+}
+#pig-facts h1, #pig-facts h2 {
+  font-family: "Fira Sans";
+}
+#pig-facts b {
+  font-family: "Open Sans";
+}
+#pig-facts > article {
+  margin: 30px;
+}
+#pig-facts > article > div {
+  border-radius: 50px;
+  margin: 40px;
+  height: 50vh;
+}
+#pig-facts > article #fact1 {
+  outline: red dotted 5px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-areas: "f h h" "f2 h2 h2";
+}
+#pig-facts > article #fact1 svg {
+  grid-area: f;
+  margin-left: -100px;
+  margin-top: -150px;
+  height: 400px;
+  position: absolute;
+}
+#pig-facts > article #fact1 h1 {
+  grid-area: h;
+  font-size: 50px;
+  height: 100px;
+}
+#pig-facts > article #fact1 b {
+  grid-area: h2;
+  font-size: 20px;
+  margin-top: -200px;
+}
+#pig-facts > article #fact2 {
+  outline: blue dotted 5px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-areas: "f h h" "f2 h2 h2";
+}
+#pig-facts > article #fact2 svg {
+  grid-area: f;
+  margin-left: -100px;
+  margin-top: -150px;
+  height: 400px;
+  position: absolute;
+}
+#pig-facts > article #fact2 h1 {
+  grid-area: h;
+  font-size: 50px;
+  height: 100px;
+}
+#pig-facts > article #fact2 b {
+  grid-area: h2;
+  font-size: 20px;
+  margin-top: -200px;
+}
+#pig-facts > article #fact3 {
+  outline: green dotted 5px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-areas: "f h h" "f2 h2 h2";
+}
+#pig-facts > article #fact3 svg {
+  grid-area: f;
+  margin-left: -100px;
+  margin-top: -150px;
+  height: 400px;
+  position: absolute;
+}
+#pig-facts > article #fact3 h1 {
+  grid-area: h;
+  font-size: 50px;
+  height: 100px;
+}
+#pig-facts > article #fact3 b {
+  grid-area: h2;
+  font-size: 20px;
+  margin-top: -200px;
+}
+#pig-facts > article #fact4 {
+  outline: purple dotted 5px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-areas: "f h h" "f2 h2 h2";
+}
+#pig-facts > article #fact4 svg {
+  grid-area: f;
+  margin-left: -100px;
+  margin-top: -150px;
+  height: 400px;
+  position: absolute;
+}
+#pig-facts > article #fact4 h1 {
+  grid-area: h;
+  font-size: 50px;
+  height: 100px;
+}
+#pig-facts > article #fact4 b {
+  grid-area: h2;
+  font-size: 20px;
+  margin-top: -200px;
+}
+@media (min-width: 1024px) {
+  #pig-facts > article {
+    grid-area: article;
+    display: grid;
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-areas: ". f1 f2 ." ". f3 f4 .";
+  }
+  #pig-facts > article > div {
+    border-radius: 50px;
+    margin: 60px;
+    height: 50vh;
+  }
+  #pig-facts > article #fact1 {
+    grid-area: f1;
+    outline: red dotted 5px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-areas: "f h i" "f2 h2 i2";
+  }
+  #pig-facts > article #fact1 svg {
+    grid-area: f;
+    margin-left: -100px;
+    margin-top: -150px;
+    height: 400px;
+    position: absolute;
+  }
+  #pig-facts > article #fact1 h1 {
+    grid-area: h;
+    margin-bottom: -100px;
+  }
+  #pig-facts > article #fact1 b {
+    grid-area: h2;
+    font-size: 12px;
+    margin-top: -50px;
+  }
+  #pig-facts > article #fact2 {
+    grid-area: f2;
+    outline: blue dotted 5px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-areas: "f h i" "f2 h2 i2";
+  }
+  #pig-facts > article #fact2 svg {
+    grid-area: f;
+    margin-left: -100px;
+    margin-top: -150px;
+    height: 400px;
+    position: absolute;
+  }
+  #pig-facts > article #fact2 h1 {
+    grid-area: h;
+    margin-bottom: -100px;
+  }
+  #pig-facts > article #fact2 h2 {
+    grid-area: f2;
+  }
+  #pig-facts > article #fact2 b {
+    grid-area: h2;
+    font-size: 12px;
+    margin-top: -50px;
+  }
+  #pig-facts > article #fact3 {
+    grid-area: f3;
+    outline: green dotted 5px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-areas: "f h i" "f2 h2 i2";
+  }
+  #pig-facts > article #fact3 svg {
+    grid-area: f;
+    margin-left: -100px;
+    margin-top: -150px;
+    height: 400px;
+    position: absolute;
+  }
+  #pig-facts > article #fact3 h1 {
+    grid-area: h;
+    margin-bottom: -100px;
+  }
+  #pig-facts > article #fact3 b {
+    grid-area: h2;
+    font-size: 12px;
+    margin-top: -50px;
+  }
+  #pig-facts > article #fact4 {
+    grid-area: f4;
+    outline: purple dotted 5px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-areas: "f h i" "f2 h2 i2";
+  }
+  #pig-facts > article #fact4 svg {
+    grid-area: f;
+    margin-left: -100px;
+    margin-top: -150px;
+    height: 400px;
+    position: absolute;
+  }
+  #pig-facts > article #fact4 h1 {
+    grid-area: h;
+    margin-bottom: -100px;
+  }
+  #pig-facts > article #fact4 b {
+    grid-area: h2;
+    font-size: 12px;
+    margin-top: -50px;
+  }
+}

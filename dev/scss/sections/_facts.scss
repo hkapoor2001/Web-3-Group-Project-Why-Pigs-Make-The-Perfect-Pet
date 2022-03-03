@@ -1,0 +1,322 @@
+#pig-facts{
+    margin-top: 200px;
+    h1, h2{
+        font-family: 'Fira Sans';
+    }
+
+    b{
+        font-family: 'Open Sans';
+    }
+
+    >article{
+        
+        margin: 30px;
+
+        >div{
+            border-radius: 50px;
+            margin: 40px;
+            height: 50vh;
+        }
+    
+        #fact1{
+            outline: red dotted 5px;
+            padding: 50px;
+    
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            grid-template-areas: "f h h"
+            "f2 h2 h2";
+    
+            svg{
+                grid-area: f;
+                // margin-left: -30px;
+                // height: 100%;
+                margin-left: -100px;
+                margin-top: -150px;
+                height: 400px;
+                position: absolute;
+            }
+    
+            h1{
+                grid-area: h;
+                font-size: 50px;
+                height: 100px;
+                // margin-bottom: -100px;
+            }
+    
+            b{
+                grid-area: h2;
+                font-size: 20px;
+                margin-top: -200px;
+                
+            }
+            
+        }
+
+        #fact2{
+            outline: blue dotted 5px;
+            padding: 50px;
+    
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            grid-template-areas: "f h h"
+            "f2 h2 h2";
+    
+            svg{
+                grid-area: f;
+                // margin-left: -30px;
+                // height: 100%;
+                margin-left: -100px;
+                margin-top: -150px;
+                height: 400px;
+                position: absolute;
+            }
+    
+            h1{
+                grid-area: h;
+                font-size: 50px;
+                height: 100px;
+                // margin-bottom: -100px;
+            }
+    
+            b{
+                grid-area: h2;
+                font-size: 20px;
+                margin-top: -200px;
+                
+            }
+            
+        }
+
+        #fact3{
+            outline: green dotted 5px;
+            padding: 50px;
+    
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            grid-template-areas: "f h h"
+            "f2 h2 h2";
+    
+            svg{
+                grid-area: f;
+                // margin-left: -30px;
+                // height: 100%;
+                margin-left: -100px;
+                margin-top: -150px;
+                height: 400px;
+                position: absolute;
+            }
+    
+            h1{
+                grid-area: h;
+                font-size: 50px;
+                height: 100px;
+                // margin-bottom: -100px;
+            }
+    
+            b{
+                grid-area: h2;
+                font-size: 20px;
+                margin-top: -200px;
+                
+            }
+            
+        }
+
+        #fact4{
+            outline: purple dotted 5px;
+            padding: 50px;
+    
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            grid-template-areas: "f h h"
+            "f2 h2 h2";
+    
+            svg{
+                grid-area: f;
+                // margin-left: -30px;
+                // height: 100%;
+                margin-left: -100px;
+                margin-top: -150px;
+                height: 400px;
+                position: absolute;
+            }
+    
+            h1{
+                grid-area: h;
+                font-size: 50px;
+                height: 100px;
+                // margin-bottom: -100px;
+            }
+    
+            b{
+                grid-area: h2;
+                font-size: 20px;
+                margin-top: -200px;
+                
+            }
+            
+        }
+
+    }    
+
+
+
+    @include lg{
+        >article{
+    grid-area: article;
+    display: grid;
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-areas: ". f1 f2 ."
+    ". f3 f4 .";
+    
+
+
+
+
+    >div{
+        border-radius: 50px;
+        margin: 60px;
+        height: 50vh;
+    }
+
+    #fact1{
+        grid-area: f1;
+        outline: red dotted 5px;
+        padding: 50px;
+
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-areas: "f h i"
+        "f2 h2 i2";
+
+        svg{
+            grid-area: f;
+            // margin-left: -30px;
+            // height: 100%;
+            margin-left: -100px;
+            margin-top: -150px;
+            height: 400px;
+            position: absolute;
+        }
+
+        h1{
+            grid-area: h;
+            margin-bottom: -100px;
+        }
+
+        b{
+            grid-area: h2;
+            font-size: 12px;
+            margin-top: -50px;
+            
+        }
+        
+    }
+
+    #fact2{
+        grid-area: f2;
+        outline: blue dotted 5px;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-areas: "f h i"
+        "f2 h2 i2";
+
+        svg{
+            grid-area: f;
+            // margin-left: -30px;
+            // height: 100%;
+            margin-left: -100px;
+            margin-top: -150px;
+            height: 400px;
+            position: absolute;
+        }
+
+        h1{
+            grid-area: h;
+            margin-bottom: -100px;
+        }
+
+        h2{
+            grid-area: f2;
+            
+        }
+
+        b{
+            grid-area: h2;
+            font-size: 12px;
+            margin-top: -50px;
+            
+        }
+    }
+
+    #fact3{
+        grid-area: f3;
+        outline: green dotted 5px;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-areas: "f h i"
+        "f2 h2 i2";
+
+        svg{
+            grid-area: f;
+            // margin-left: -30px;
+            // height: 100%;
+            margin-left: -100px;
+            margin-top: -150px;
+            height: 400px;
+            position: absolute;
+        }
+
+        h1{
+            grid-area: h;
+            margin-bottom: -100px;
+        }
+
+        b{
+            grid-area: h2;
+            font-size: 12px;
+            margin-top: -50px;
+            
+        }
+    }
+
+    #fact4{
+        grid-area: f4;
+        outline: purple dotted 5px;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-areas: "f h i"
+        "f2 h2 i2";
+
+        svg{
+            grid-area: f;
+            // margin-left: -30px;
+            // height: 100%;
+            margin-left: -100px;
+            margin-top: -150px;
+            height: 400px;
+            position: absolute;
+        }
+
+        h1{
+            grid-area: h;
+            margin-bottom: -100px;
+        }
+
+        b{
+            grid-area: h2;
+            font-size: 12px;
+            margin-top: -50px;
+            
+        }
+    }
+
+
+    }
+    }
+    
+}
