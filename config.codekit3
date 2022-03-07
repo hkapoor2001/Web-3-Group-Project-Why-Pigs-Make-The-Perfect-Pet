@@ -31,6 +31,84 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/Famous-1.png" : {
+      "ft" : 32768,
+      "iS" : 1674127,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Famous-1.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Famous-2.png" : {
+      "ft" : 32768,
+      "iS" : 1704605,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Famous-2.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Famous-3.png" : {
+      "ft" : 32768,
+      "iS" : 1508678,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Famous-3.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Famous-4.png" : {
+      "ft" : 32768,
+      "iS" : 1901032,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Famous-4.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Famous-5.png" : {
+      "ft" : 32768,
+      "iS" : 1574502,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Famous-5.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Famous-6.png" : {
+      "ft" : 32768,
+      "iS" : 975132,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Famous-6.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/Halo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -71,6 +149,17 @@
       "oA" : 0,
       "oAP" : "\/deploy\/index.html",
       "oF" : 0
+    },
+    "\/deploy\/js\/scripts-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/deploy\/js\/scripts-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/dev\/content\/facts.kit" : {
       "cB" : 0,
@@ -168,6 +257,17 @@
       "oA" : 1,
       "oAP" : "\/dev\/js\/drawhalo-min.js",
       "oF" : 1,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/dev\/js\/famouspigs.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/famouspigs-min.js",
+      "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },

@@ -1,8 +1,10 @@
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import {gsap} from "gsap";
+import { HorizontalScroll } from "./famouspigs";
 
 gsap.registerPlugin(DrawSVGPlugin);
 
+HorizontalScroll();
 const haloTL = gsap.timeline();
 
 function halodraw(){

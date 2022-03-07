@@ -352,6 +352,10 @@ template {
 /* =============
     Base
 ============= */
+body {
+  overflow-x: hidden;
+}
+
 /* =============
     Typography
 ============= */
@@ -472,6 +476,7 @@ header > div #burger-container {
 ============= */
 #hero {
   width: 100vw;
+  height: 100vh;
   padding-top: 15%;
   background-color: #FFF8F8;
 }
@@ -504,4 +509,40 @@ header > div #burger-container {
 }
 #hero #hero-div #hero-img-div #heroimg {
   width: 100%;
+}
+
+#famous-pigs {
+  padding-top: 10vh;
+}
+#famous-pigs #famous-pigs-h1 {
+  padding-left: 10%;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+#famous-pigs #hscroll {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 30%;
+}
+#famous-pigs #hscroll .famous-pigs-img {
+  height: 60vh;
+}
+#famous-pigs #hscroll .imgdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pig-care {
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
 }

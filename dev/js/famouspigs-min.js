@@ -1,0 +1,1 @@
+import{gsap}from"gsap";import{ScrollTrigger}from"gsap/ScrollTrigger";export function HorizontalScroll(){gsap.registerPlugin(ScrollTrigger);let r=document.querySelector("#hscroll");gsap.to(r,{x:()=>-(r.scrollWidth-document.documentElement.clientWidth)+"px",ease:"none",scrollTrigger:{trigger:r,pin:!0,scrub:1,end:()=>"+="+r.offsetWidth}})}

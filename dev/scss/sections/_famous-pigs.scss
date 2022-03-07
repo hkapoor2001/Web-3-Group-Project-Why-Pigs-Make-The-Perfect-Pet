@@ -1,0 +1,40 @@
+#famous-pigs{
+    padding-top: 10vh;
+
+    #famous-pigs-h1{
+        padding-left: 10%;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }
+    
+    #hscroll{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 400vh;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 30%;
+
+        .famous-pigs-img{
+            height: 60vh;
+        }
+        
+        .imgdiv{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+        }
+
+
+
+
+    }
+
+}
+
