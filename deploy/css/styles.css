@@ -476,17 +476,14 @@ header > div #burger-container {
 ============= */
 #hero {
   width: 100vw;
-  height: 100vh;
-  padding-top: 15%;
-  background-color: #FFF8F8;
-}
-@media (min-width: 1024px) {
-  #hero {
-    padding-top: 6%;
-  }
 }
 #hero #hero-div {
+  padding-top: 10%;
   position: relative;
+  display: flex;
+}
+#hero #hero-div #heroimg {
+  width: 100%;
 }
 #hero #hero-div #halo-div {
   z-index: 3;
@@ -500,15 +497,6 @@ header > div #burger-container {
 }
 #hero #hero-div #halo-div #halo {
   grid-area: halo;
-}
-#hero #hero-div #hero-img-div {
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-}
-#hero #hero-div #hero-img-div #heroimg {
-  width: 100%;
 }
 
 #famous-pigs {
@@ -527,12 +515,12 @@ header > div #burger-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 350vh;
-  padding-left: 10%;
+  width: 100%;
+  gap: 5%;
   padding-bottom: 30%;
 }
 #famous-pigs #hscroll .famous-pigs-img {
-  height: 55vh;
+  width: 50vh;
 }
 #famous-pigs #hscroll .imgdiv {
   display: flex;
