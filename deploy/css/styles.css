@@ -519,8 +519,18 @@ header > div #burger-container {
   gap: 5%;
   padding-bottom: 30%;
 }
+#famous-pigs #hscroll #flex-spacing-1 {
+  width: 50vw;
+  height: 100%;
+  background-color: red;
+}
+#famous-pigs #hscroll #flex-spacing-2 {
+  width: 50vw;
+  height: 100%;
+  background-color: red;
+}
 #famous-pigs #hscroll .famous-pigs-img {
-  width: 50vh;
+  width: 30vw;
 }
 #famous-pigs #hscroll .imgdiv {
   display: flex;

@@ -1,9 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
 // window.addEventListener("resize", )
-
 
 export function HorizontalScroll(){
   // console.log(scrollContainer.offsetWidth + "this is Scrollcontainer width")
