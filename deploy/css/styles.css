@@ -10,6 +10,28 @@ html {
 /* =============
     Variables
 ============= */
+:root {
+  --textcolor: #000;
+  --backgroundcolor: #fff;
+  --logonosecolor: #E394D2;
+  --logotextcolor: #72066D;
+}
+
+[data-theme=light] {
+  --textcolor: #000;
+  --backgroundcolor: #fff;
+  --logonosecolor: #E394D2;
+  --logotextcolor: #72066D;
+}
+
+[data-theme=dark] {
+  --textcolor: #fff;
+  --backgroundcolor:#302C2C;
+  --fact1color: #fff;
+  --logonosecolor: #fff;
+  --logotextcolor: #fff;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -354,6 +376,22 @@ template {
 ============= */
 body {
   overflow-x: hidden;
+  background-color: var(--backgroundcolor);
+}
+body p {
+  color: var(--textcolor);
+}
+body h1 {
+  color: var(--textcolor);
+}
+body h2 {
+  color: var(--textcolor);
+}
+body a {
+  color: var(--textcolor);
+}
+body b {
+  color: var(--textcolor);
 }
 
 /* =============
@@ -390,7 +428,7 @@ header {
   grid-template-columns: 5% 90% 5%;
   padding-top: 2%;
   padding-bottom: 1%;
-  background-color: white;
+  background-color: var(--backgroundcolor);
   position: fixed;
   z-index: 10000000;
 }
@@ -438,7 +476,6 @@ header > div #burger-container {
     font-size: 25px;
     font-weight: bold;
     text-decoration: none;
-    color: black;
   }
   header > div #header-nav-container a:hover {
     color: #FFC700;
@@ -467,7 +504,7 @@ header > div #burger-container {
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
-    color: black;
+    color: var(--textcolor);
   }
 }
 
@@ -780,7 +817,6 @@ header > div #burger-container {
   font-size: 50px;
   font-weight: bold;
   text-decoration: none;
-  color: black;
 }
 #famous-pigs #hscroll {
   position: relative;
@@ -804,7 +840,7 @@ header > div #burger-container {
   font-size: 40px;
   font-weight: bold;
   text-decoration: none;
-  color: black;
+  color: var(--textcolor);
 }
 
 #pig-care #pig-care-container #pig-care-intro h1 {
@@ -812,14 +848,14 @@ header > div #burger-container {
   font-size: 40px;
   font-weight: bold;
   text-decoration: none;
-  color: black;
+  color: var(--textcolor);
   padding-left: 4%;
 }
 #pig-care #pig-care-container #pig-care-intro p {
   font-family: "Fira Sans", sans-serif;
   font-size: 20px;
   text-decoration: none;
-  color: black;
+  color: var(--textcolor);
   padding-left: 4%;
 }
 #pig-care #pig-care-container .carousel {
@@ -895,4 +931,62 @@ header > div #burger-container {
   text-align: left;
   color: #F8C832;
   font-size: 2em;
+}
+
+#dark-mode-toggle-container {
+  display: flex;
+  align-items: center;
+}
+#dark-mode-toggle-container em {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #F1C2E4;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

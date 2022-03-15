@@ -53,7 +53,6 @@
         font-size: 50px;
         font-weight: bold;
         text-decoration: none;
-        color: black;
     }
     
     #hscroll{
@@ -92,7 +91,7 @@
                     font-size: 40px;
                     font-weight: bold;
                     text-decoration: none;
-                    color: black;
+                    color: var(--textcolor);
             }
         
         }

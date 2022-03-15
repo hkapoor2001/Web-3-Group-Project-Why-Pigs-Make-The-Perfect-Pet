@@ -23,3 +23,25 @@ $yellow: #F8C832;
 $charcoal: #222222;
 
 // $grey: rgba(0,0,0,0.9);
+
+:root {
+    --textcolor: #000;
+    --backgroundcolor: #fff;
+    --logonosecolor: #E394D2;
+    --logotextcolor: #72066D;
+}
+
+[data-theme="light"] {
+    --textcolor: #000;
+    --backgroundcolor: #fff;
+    --logonosecolor: #E394D2;
+    --logotextcolor: #72066D;
+}
+
+[data-theme="dark"] {
+    --textcolor: #fff;
+    --backgroundcolor:#302C2C;
+    --fact1color: #fff;
+    --logonosecolor: #fff;
+    --logotextcolor: #fff;
+}

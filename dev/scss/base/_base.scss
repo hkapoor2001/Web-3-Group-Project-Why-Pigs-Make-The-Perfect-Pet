@@ -4,4 +4,28 @@
 
 body{
         overflow-x: hidden;
-    }
+        background-color: var(--backgroundcolor);
+
+        p{
+            color: var(--textcolor); 
+         }
+         
+         h1{
+             color: var(--textcolor); 
+         }
+         
+         h2{
+             color: var(--textcolor); 
+         }
+         
+         a{
+             color: var(--textcolor); 
+         }
+
+         b{
+            color: var(--textcolor); 
+        }
+         
+         
+}
+
