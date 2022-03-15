@@ -21,6 +21,19 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/balancer.png" : {
+      "ft" : 32768,
+      "iS" : 480686,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/balancer.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/Burger.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -109,6 +122,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/friends.png" : {
+      "ft" : 32768,
+      "iS" : 1013447,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/friends.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/Halo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -118,6 +144,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/deploy\/img\/handsome.png" : {
+      "ft" : 32768,
+      "iS" : 942171,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/handsome.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/img\/Hero.png" : {
       "ft" : 32768,
@@ -141,6 +180,71 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/deploy\/img\/pigcare-1.jpeg" : {
+      "ft" : 16384,
+      "iS" : 1398633,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/pigcare-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/pigcare-1.jpg" : {
+      "ft" : 16384,
+      "iS" : 1398277,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/pigcare-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/pigcare-2.jpg" : {
+      "ft" : 16384,
+      "iS" : 158855,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/pigcare-2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/pigcare-3.jpg" : {
+      "ft" : 16384,
+      "iS" : 5700161,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/pigcare-3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/pigcare-4.jpg" : {
+      "ft" : 16384,
+      "iS" : 251803,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/pigcare-4.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/index.html" : {
       "cB" : 0,

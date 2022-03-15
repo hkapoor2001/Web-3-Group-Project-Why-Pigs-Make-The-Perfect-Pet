@@ -1,0 +1,560 @@
+#pig-facts{
+
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-areas: ". mid .";
+
+    margin-top: 200px;
+
+    @include xl{
+
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". mid .";
+    }
+    
+
+
+    h1, h2{
+        font-family: 'Fira Sans';
+    }
+
+    b{
+        font-family: 'Open Sans';
+    }
+
+    >article{
+        grid-area: mid;
+        
+        margin: 30px;
+
+        
+
+
+        @include md{
+           
+     
+             display: grid;
+         grid-template-columns: auto 45% 40px 45% auto;
+         grid-template-areas: ". grid1 . grid2 ."
+         ". grid3 . grid4 .";
+     
+            
+         }
+
+         @include lg{
+
+            display: grid;
+         grid-template-columns: auto 40% 40px 40% auto;
+         grid-template-areas: ". grid1 . grid2 ."
+         ". grid3 . grid4 .";
+         }
+
+
+         @include xl{
+
+            display: grid;
+         grid-template-columns: 47% 40px 47%;
+         grid-template-areas: "grid1 . grid2"
+         "grid3 . grid4";
+         }
+
+        >div{
+            border-radius: 50px;
+            // margin: 40px;
+            height: 50vh;
+        }
+    
+        #fact1{
+            outline: #FF83FA dotted 5px;
+            padding: 50px;
+            padding-bottom: 100px;
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            grid-template-areas: "h h h"
+            "h2 h2 h2"
+            ". . pig"
+            ". . ball";
+
+            @include md{
+                grid-area: grid1;
+            }
+    
+            svg{
+                grid-area: f;
+                // margin-left: -30px;
+                // height: 100%;
+                scale: .5;
+                margin-left: -100px;
+                margin-top: -150px;
+                // height: 300px;
+                
+                position: absolute;
+
+                
+                
+            }
+    
+            .ballie{
+                height: 90px;
+                position: relative;
+                grid-area: ball;
+                margin-left: -30px;
+                margin-top: -300px;
+                // padding-top: -100px;
+                // position: absolute;
+            }
+
+
+            img{
+                grid-area: pig;
+                height: 300px;
+                // width:75px;
+                margin-left: -150px;
+                margin-top: 100px;
+                z-index: 100;
+
+                // width: 25vw;
+            }
+
+            h1{
+                grid-area: h;
+                font-size: 24px;
+                height: 100px;
+                padding-top: 50px;
+                // margin-bottom: -100px;
+
+                @include md{
+                    font-size: 29pt;
+                }
+            }
+    
+            b{
+                grid-area: h2;
+                height: 50px;
+                font-size: 11pt;
+                padding-bottom: 20px;
+                // margin-top: -200px;
+                // padding-top: 150px;
+
+                @include md{
+                    font-size: 13pt;
+                }
+                
+            }
+            
+        }
+
+        #fact2{
+            outline: #FFC736 dotted 5px;
+            padding: 50px;
+            margin-top: 250px;
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            grid-template-areas: "h h h"
+            "h2 h2 h2"
+            ". . ."
+            "e e e";
+
+            @include md{
+                grid-area: grid2;
+                margin-top: 150px;
+                padding-bottom: 100px;
+            }
+
+            // display: grid;
+            // grid-template-columns: 25% 50% 25%;
+            // grid-template-areas: "h h h"
+            // "h2 h2 h2"
+            // ". . pig"
+            // ". . ball";
+    
+            #bigNumber2{
+                // grid-area: f;
+                // margin-left: -30px;
+                // height: 100%;
+                margin-left: -100px;
+                height: 250px;
+                margin-top: -150px;
+                // height: 400px;
+                position: absolute;
+            }
+    
+            h1{
+                grid-area: h;
+                font-size: 24px;
+                // height: 100px;
+                padding-top: 60px;
+                height: 70px;
+                // margin-bottom: -100px;
+                @include md{
+                    font-size: 29pt;
+                }
+                
+            }
+
+            #bargraph{
+                grid-area: e;
+                // margin-bottom: -30px;
+                height: fit-content;
+                position:static;
+
+                @include md{
+                    margin-bottom: 100px;
+                }
+                
+                // padding-top: 20px;
+                // margin-bottom: 200px;
+                // margin-bottom: -100px;
+                // height: 100px;
+                
+                // justify-items:flex-start;
+                // align-items:stretch;
+                
+            }
+    
+            b{
+                grid-area: h2;
+                font-size: 11pt;
+                padding-bottom: 20px;
+                // margin-top: -200px;
+                height: 100%;
+                
+                @include md{
+                    font-size: 13pt;
+                }
+            }
+            
+        }
+
+        #fact3{
+            outline: #80D7F3 dotted 5px;
+            padding: 50px;
+            margin-top: 225px;
+
+            @include md{
+                grid-area: grid3;
+                margin-top: 50px;
+            }
+    
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            grid-template-areas: "h h h"
+            "h2 h2 h2"
+            "b b b"
+            "c c c";
+    
+            #bigNumber3{
+                grid-area: f;
+                // margin-left: -30px;
+                // height: 100%;
+                margin-left: -100px;
+                margin-top: -150px;
+                height: 400px;
+                position: absolute;
+            }
+    
+            h1{
+                grid-area: h;
+                font-size: 24px;
+                padding-top: 60px;
+                height: 200px;
+                // margin-bottom: -100px;
+                @include md{
+                    font-size: 29pt;
+                }
+            }
+    
+            b{
+                grid-area: h2;
+                // font-size: 20px;
+                font-size: 11pt;
+                margin-top: -150px;
+                
+                
+                @include md{
+                    font-size: 13pt;
+                }
+                
+            }
+
+            img{
+                grid-area: b;
+                height: 300px;
+                margin-top: -80px;
+                margin-left: -20px;
+                
+            }
+
+            #blurb{
+                grid-area: b;
+                align-items: fill;
+                z-index: 100;
+                display: none;
+                @include md{
+                    grid-area: b;
+                    display: grid;
+                    height: 100px;
+                    margin-left: 200px;
+                    
+                    
+                }
+            }
+            
+        }
+
+        #fact4{
+            outline: #82EF80 dotted 5px;
+            padding: 50px;
+            margin-top: 225px;
+            // padding-bottom: 50px;
+
+
+            @include md{
+                grid-area: grid4;
+                margin-top: 150px;
+                // padding-bottom: 70px;
+            }
+    
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            grid-template-areas: "h h h"
+            "h2 h2 h2";
+    
+            #bigNumber4{
+                grid-area: f;
+                // margin-left: -30px;
+                // height: 100%;
+                margin-left: -100px;
+                margin-top: -150px;
+                height: 400px;
+                position: absolute;
+            }
+    
+            h1{
+                grid-area: h;
+                font-size: 24px;
+                height: 200px;
+                padding-top: 60px;
+                // margin-bottom: -100px;
+                @include md{
+                    font-size: 29pt;
+                }
+            }
+    
+            b{
+                grid-area: h2;
+                font-size: 11pt;
+                margin-top: -120px;
+                margin-bottom: 20px;
+
+                @include md{
+                    font-size: 13pt;
+                    padding-bottom: 50px;
+                }
+                
+            }
+
+            img{
+                height: 300px;
+                margin-top: -40px;
+            }
+
+            #sparkles{
+                // grid-area: h2;
+                width: 150px;
+                z-index: 1000;
+                padding-left: 50px;
+                // margin-left: 100px;
+                
+            }
+            
+        }
+
+    }    
+
+
+
+    // @include sm{
+        
+    //         h1, h2{
+    //         font-size: 40pt;
+    //     }
+
+    //     b{
+    //         // font-size: rem-calc(20);
+    //         font-size: 20pt;
+    //     }
+        
+
+    //     // #pigs-body{
+    //     //     font-size: 12pt;
+    //     // }
+
+        
+    // }
+
+    @include md{
+        
+    }
+
+
+    @include lg{
+    //     >article{
+    // grid-area: article;
+    // display: grid;
+    // grid-template-columns: 5% 45% 45% 5%;
+    // grid-template-areas: ". f1 f2 ."
+    // ". f3 f4 .";
+    
+
+
+
+
+    // >div{
+    //     border-radius: 50px;
+    //     margin: 60px;
+    //     height: 50vh;
+    // }
+
+    // #fact1{
+    //     grid-area: f1;
+    //     outline: red dotted 5px;
+    //     padding: 50px;
+
+    //     display: grid;
+    //     grid-template-columns: 25% 50% 25%;
+    //     grid-template-areas: "f h i"
+    //     "f2 h2 i2";
+
+    //     svg{
+    //         grid-area: f;
+    //         // margin-left: -30px;
+    //         // height: 100%;
+    //         margin-left: -100px;
+    //         margin-top: -150px;
+    //         height: 400px;
+    //         position: absolute;
+    //     }
+
+    //     h1{
+    //         grid-area: h;
+    //         margin-bottom: -100px;
+    //     }
+
+    //     b{
+    //         grid-area: h2;
+    //         font-size: 12px;
+    //         margin-top: -50px;
+            
+    //     }
+        
+    // }
+
+    // #fact2{
+    //     grid-area: f2;
+    //     outline: blue dotted 5px;
+    //     padding: 50px;
+    //     display: grid;
+    //     grid-template-columns: 25% 50% 25%;
+    //     grid-template-areas: "f h i"
+    //     "f2 h2 i2";
+
+    //     svg{
+    //         grid-area: f;
+    //         // margin-left: -30px;
+    //         // height: 100%;
+    //         margin-left: -100px;
+    //         margin-top: -150px;
+    //         height: 400px;
+    //         position: absolute;
+    //     }
+
+    //     h1{
+    //         grid-area: h;
+    //         margin-bottom: -100px;
+    //     }
+
+    //     h2{
+    //         grid-area: f2;
+            
+    //     }
+
+    //     b{
+    //         grid-area: h2;
+    //         font-size: 12px;
+    //         margin-top: -50px;
+            
+    //     }
+    // }
+
+    // #fact3{
+    //     grid-area: f3;
+    //     outline: green dotted 5px;
+    //     padding: 50px;
+    //     display: grid;
+    //     grid-template-columns: 25% 50% 25%;
+    //     grid-template-areas: "f h i"
+    //     "f2 h2 i2";
+
+    //     svg{
+    //         grid-area: f;
+    //         // margin-left: -30px;
+    //         // height: 100%;
+    //         margin-left: -100px;
+    //         margin-top: -150px;
+    //         height: 400px;
+    //         position: absolute;
+    //     }
+
+    //     h1{
+    //         grid-area: h;
+    //         margin-bottom: -100px;
+    //     }
+
+    //     b{
+    //         grid-area: h2;
+    //         font-size: 12px;
+    //         margin-top: -50px;
+            
+    //     }
+    // }
+
+    // #fact4{
+    //     grid-area: f4;
+    //     outline: purple dotted 5px;
+    //     padding: 50px;
+    //     display: grid;
+    //     grid-template-columns: 25% 50% 25%;
+    //     grid-template-areas: "f h i"
+    //     "f2 h2 i2";
+
+    //     svg{
+    //         grid-area: f;
+    //         // margin-left: -30px;
+    //         // height: 100%;
+    //         margin-left: -100px;
+    //         margin-top: -150px;
+    //         height: 400px;
+    //         position: absolute;
+    //     }
+
+    //     h1{
+    //         grid-area: h;
+    //         margin-bottom: -100px;
+    //     }
+
+    //     b{
+    //         grid-area: h2;
+    //         font-size: 12px;
+    //         margin-top: -50px;
+            
+    //     }
+    // }
+
+
+    // }
+    }
+    
+}

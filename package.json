@@ -8,6 +8,8 @@
   "repository": {},
   "private": true,
   "dependencies": {
+    "@fancyapps/ui": "^4.0.26",
+    "fancybox": "^3.0.1",
     "gsap": "file:gsap-bonus.tgz"
   }
 }
