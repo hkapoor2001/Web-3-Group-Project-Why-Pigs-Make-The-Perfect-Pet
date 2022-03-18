@@ -430,7 +430,7 @@ header {
   padding-bottom: 1%;
   background-color: var(--backgroundcolor);
   position: fixed;
-  z-index: 10000000;
+  z-index: 10000;
 }
 header > div {
   grid-area: header;
@@ -511,6 +511,16 @@ header > div #burger-container {
 /* =============
     Footer
 ============= */
+#preloader-div {
+  position: fixed;
+  display: flex;
+  z-index: 10000000;
+}
+#preloader-div #preloadersvg {
+  height: 100vh;
+  width: 100vw;
+}
+
 #hero {
   width: 100vw;
 }
