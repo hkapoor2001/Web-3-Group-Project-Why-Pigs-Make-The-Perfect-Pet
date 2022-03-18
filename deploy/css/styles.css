@@ -978,12 +978,13 @@ footer > div ul li a:visited:active {
 }
 #pig-care #pig-care-container .carousel .tint {
   grid-area: paragraph;
-  background-color: #222222;
+  background-color: #FFD1FD;
 }
 #pig-care #pig-care-container .carousel .tint .paragraph {
-  padding: 40px;
+  padding: 25px;
   text-align: left;
-  color: #F8C832;
+  color: black;
+  font-family: "Fira Sans", sans-serif;
   font-size: 2em;
 }
 

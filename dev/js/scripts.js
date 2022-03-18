@@ -90,9 +90,6 @@ function loaderanimation(){
 loaderTL.add (loaderanimation())
 
 
-let mobilemenu = document.querySelector("#mobile-nav")
-let mobilemenuWidth = -mobilemenu.offsetWidth
-gsap.set("#mobile-nav", {x:mobilemenuWidth})
 
 const mobileTL = new gsap.timeline({paused:true});
 mobileTL.to("#mobile-nav", {duration:0.3, y:0, x:0});
@@ -112,24 +109,51 @@ function OpenCloseMobileMenu(){
         CanISeeMobileMenu = false;}
 }
 
-import { gsap } from "gsap";
 
-export function displayWindowSize(){
+// function CloseMenuOnResize(){
+//   if(CanISeeMobileMenu === true){
+//     mobileTL.reverse();
+//     CanISeeMobileMenu = false;
+// }
+// }
 
-let menu = document.querySelector("#mobile-nav");
-// let menuHeight = menu.offsetHeight;
-let menuWidth = menu.offsetWidth;
 
-// console.log(menuHeight);
+// let navLinks = document.queryselectorAll(".mobilelink");
+
+// for (const button of navLinks){
+//   button.addEventListener("click", CloseMenuOnResize)
+// }
+
+
+// var navlink1= document.querySelector("mobilelink1")
+// var navlink2= document.querySelector("mobilelink2")
+// var navlink3= document.querySelector("mobilelink3")
+
+// navlink1.addEventListener("click", CloseMenuOnResize)
+// navlink2.addEventListener("click", CloseMenuOnResize)
+// navlink3.addEventListener("click", CloseMenuOnResize)
+
+
+window.addEventListener("resize", displayWindowSize)
+window.addEventListener("load", displayWindowSize)
+
+function displayWindowSize(){
+
+  let mobilemenu = document.querySelector("#mobile-nav")
+  let mobilemenuWidth = -mobilemenu.offsetWidth
+  gsap.set("#mobile-nav", {x:mobilemenuWidth})
 
 
 // check the view port view and see if the menu needs to be moved
 if(document.documentElement.clientWidth <= 1024){
 console.log("hide");
-gsap.set("#mobile-nav",{x:menuWidth});
-}else{
+gsap.set("#mobile-nav", {x:mobilemenuWidth})
+}
+
+else{
 console.log("un-hide");
 gsap.set("#mobile-nav",{x:0});
+CanISeeMobileMenu = false;
 }
 
 }

@@ -106,11 +106,12 @@
 
             .tint{
                 grid-area: paragraph;
-                background-color: $charcoal ;
+                background-color:#FFD1FD; ;
                 .paragraph{
-                    padding: 40px;
+                    padding: 25px;
                     text-align: left;
-                    color: $yellow;
+                    color: black;
+                    font-family: 'Fira Sans', sans-serif;
                     font-size: 2em;
                 }
             }
