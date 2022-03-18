@@ -1,3 +1,54 @@
 /* =============
     Footer
 ============= */
+
+footer {
+margin-top: 10%;
+hr{
+margin-top: 10%;
+border-top: 2.5pt;
+border-color: pink;
+width: 80%;
+display: flex;
+justify-content: center;
+}
+    
+>div {
+padding: 2%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+h5 {
+font-size: 2em;
+margin-bottom: 10px;
+color: pink;
+    
+
+}
+    
+ul {
+display: flex;
+justify-content: space-around;
+
+
+li {
+margin: 0 10px;
+list-style: none;
+    
+a:link,
+a:visited {
+padding: 10px;
+olor: pink;
+font-size: 1.5em;
+transition: 0.25s;
+
+&:hover,
+&:active {
+color: lightpink;
+}
+}
+    
+}
+}
+}
+}

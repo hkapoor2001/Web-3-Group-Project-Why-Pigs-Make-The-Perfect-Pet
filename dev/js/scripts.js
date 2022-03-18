@@ -83,7 +83,53 @@ function loaderanimation(){
   .to("#pool",{duration:4, translateY: -5000, delay: 0.5, alpha: 0}, "two")
   .to("#Background",{duration:4, translateY: -10000, delay: 0.5}, "two")
   .to("#board",{duration:4, translateY: -5000, delay: 0.5, alpha: 0},  "two")
+  
 
   return tl;
 }
 loaderTL.add (loaderanimation())
+
+
+let mobilemenu = document.querySelector("#mobile-nav")
+let mobilemenuWidth = -mobilemenu.offsetWidth
+gsap.set("#mobile-nav", {x:mobilemenuWidth})
+
+const mobileTL = new gsap.timeline({paused:true});
+mobileTL.to("#mobile-nav", {duration:0.3, y:0, x:0});
+
+
+var burgerButton= document.querySelector("#burger-container")
+burgerButton.addEventListener("click", OpenCloseMobileMenu)
+
+let CanISeeMobileMenu = false;
+function OpenCloseMobileMenu(){
+    if(CanISeeMobileMenu === false){
+        mobileTL.play();
+        CanISeeMobileMenu = true;
+    }
+    else{
+        mobileTL.reverse();
+        CanISeeMobileMenu = false;}
+}
+
+import { gsap } from "gsap";
+
+export function displayWindowSize(){
+
+let menu = document.querySelector("#mobile-nav");
+// let menuHeight = menu.offsetHeight;
+let menuWidth = menu.offsetWidth;
+
+// console.log(menuHeight);
+
+
+// check the view port view and see if the menu needs to be moved
+if(document.documentElement.clientWidth <= 1024){
+console.log("hide");
+gsap.set("#mobile-nav",{x:menuWidth});
+}else{
+console.log("un-hide");
+gsap.set("#mobile-nav",{x:0});
+}
+
+}

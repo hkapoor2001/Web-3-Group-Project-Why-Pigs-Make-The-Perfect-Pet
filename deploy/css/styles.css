@@ -430,7 +430,7 @@ header {
   padding-bottom: 1%;
   background-color: var(--backgroundcolor);
   position: fixed;
-  z-index: 10000;
+  z-index: 10001;
 }
 header > div {
   grid-area: header;
@@ -511,10 +511,54 @@ header > div #burger-container {
 /* =============
     Footer
 ============= */
+footer {
+  margin-top: 10%;
+}
+footer hr {
+  margin-top: 10%;
+  border-top: 2.5pt;
+  border-color: pink;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+footer > div {
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer > div h5 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: pink;
+}
+footer > div ul {
+  display: flex;
+  justify-content: space-around;
+}
+footer > div ul li {
+  margin: 0 10px;
+  list-style: none;
+}
+footer > div ul li a:link,
+footer > div ul li a:visited {
+  padding: 10px;
+  olor: pink;
+  font-size: 1.5em;
+  transition: 0.25s;
+}
+footer > div ul li a:link:hover, footer > div ul li a:link:active,
+footer > div ul li a:visited:hover,
+footer > div ul li a:visited:active {
+  color: lightpink;
+}
+
 #preloader-div {
   position: fixed;
   display: flex;
   z-index: 10000000;
+  pointer-events: none;
 }
 #preloader-div #preloadersvg {
   height: 100vh;
@@ -941,6 +985,30 @@ header > div #burger-container {
   text-align: left;
   color: #F8C832;
   font-size: 2em;
+}
+
+#mobile-nav {
+  position: fixed;
+  z-index: 10000;
+  width: 100vh;
+  height: 100vh;
+  background-image: url(../img/nav-background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  pointer-events: none;
+}
+#mobile-nav a {
+  pointer-events: all;
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 60px;
+  text-decoration: none;
+  padding-left: 10%;
+  padding-top: 5%;
 }
 
 #dark-mode-toggle-container {

@@ -2,6 +2,7 @@
     position: fixed;
     display: flex;
     z-index: 10000000;
+    pointer-events: none; 
     
     #preloadersvg{
         height: 100vh;
