@@ -90,6 +90,9 @@ function loaderanimation(){
 loaderTL.add (loaderanimation())
 
 
+// let mobilemenu = document.querySelector("#mobile-nav")
+// let mobilemenuWidth = -mobilemenu.offsetWidth
+// gsap.set("#mobile-nav", {x:mobilemenuWidth})
 
 const mobileTL = new gsap.timeline({paused:true});
 mobileTL.to("#mobile-nav", {duration:0.3, y:0, x:0});
@@ -110,12 +113,7 @@ function OpenCloseMobileMenu(){
 }
 
 
-// function CloseMenuOnResize(){
-//   if(CanISeeMobileMenu === true){
-//     mobileTL.reverse();
-//     CanISeeMobileMenu = false;
-// }
-// }
+
 
 
 // let navLinks = document.queryselectorAll(".mobilelink");
@@ -144,16 +142,16 @@ function displayWindowSize(){
   gsap.set("#mobile-nav", {x:mobilemenuWidth})
 
 
-// check the view port view and see if the menu needs to be moved
-if(document.documentElement.clientWidth <= 1024){
-console.log("hide");
-gsap.set("#mobile-nav", {x:mobilemenuWidth})
-}
+// // // check the view port view and see if the menu needs to be moved
+// if(document.documentElement.clientWidth <= 1024){
+// console.log("hide");
+// gsap.set("#mobile-nav", {x:mobilemenuWidth})
 
-else{
-console.log("un-hide");
-gsap.set("#mobile-nav",{x:0});
-CanISeeMobileMenu = false;
-}
+// }
+// else{
+// console.log("un-hide");
+// gsap.set("#mobile-nav",{x:0});
+// // CanISeeMobileMenu = false;
+// }
 
 }

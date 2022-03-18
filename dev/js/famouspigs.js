@@ -19,7 +19,7 @@ export function HorizontalScroll(){
         scrub: 1,
         start:"top 5%",
         end: () => "+=" + (scrollContainer.offsetWidth),
-        markers: true
+        // markers: true
       }
     })
     }
